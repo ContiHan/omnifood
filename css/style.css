@@ -390,7 +390,7 @@
     overflow: hidden;
 }
 
-.signup::after {
+.pricing-card--complete::after {
     position: absolute;
     top: 7%;
     right: -18%;
@@ -398,7 +398,7 @@
     color: #333;
     content: "Best value";
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 700;
     padding: 0.8rem 8rem;
     transform: rotate(45deg);
     text-transform: uppercase;
