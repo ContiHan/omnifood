@@ -285,9 +285,6 @@
 
 .meal-description-icon {
     color: #e67e22;
-}
-
-.meal-description-icon {
     width: 2.4rem;
     height: 2.4rem;
 }
@@ -434,4 +431,33 @@
 .pricing-per-month {
     font-size: 1.6rem;
     line-height: 1.6;
+}
+
+.pricing-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.feature-icon {
+    color: #e67e22;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1.6rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
