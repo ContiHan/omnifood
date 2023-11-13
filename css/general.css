@@ -32,9 +32,11 @@ Paragraph L: 1.8
 - Tints
 #fdf2e9
 #fae5d3
+#eb984e
 
 - Shades
 #cf711f
+#45260a
 
 - Accents
 
@@ -48,11 +50,14 @@ Paragraph L: 1.8
 
 --- 03 SHADOWS
 
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
 
 --- 04 BORDER RADIUS
 
 Default: 8px
 Cards: 12px
+
 
 --- 05 WHITESPACE
 
@@ -155,6 +160,7 @@ body {
     letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:is(:link, :visited) {
     display: inline-block;
     font-size: 2rem;
@@ -165,6 +171,11 @@ body {
 
     /* transition: background-color 0.3s, box-shadow 0.3s; */
     transition: all 0.3s;
+
+    /* only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .btn--full:is(:link, :visited) {
@@ -184,6 +195,19 @@ body {
 .btn--outline:is(:hover, :active) {
     background-color: #fdf2e9;
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #45260a;
+    box-shadow: inset 0 0 0 3px #45260a;
 }
 
 .link:is(:link, :visited) {
@@ -220,6 +244,11 @@ body {
     height: 3.2rem;
     color: #cf711f;
     flex-shrink: 0;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 
 /*************************************/
