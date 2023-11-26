@@ -116,13 +116,6 @@ Instead, 1rem = 1em = 16px
         grid-template-columns: 1fr;
     }
 
-    .cta-form label {
-        display: block;
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-bottom: 1.2rem;
-    }
-
     .btn--form {
         margin-top: 1.6rem;
     }
