@@ -409,8 +409,8 @@
 
 .pricing-card--complete::after {
     position: absolute;
-    top: 7%;
-    right: -18%;
+    top: 6%;
+    right: -20%;
 
     color: #333;
     content: "Best value";
