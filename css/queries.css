@@ -112,10 +112,11 @@ Instead, 1rem = 1em = 16px
         grid-template-columns: 3fr 2fr;
     }
 
-    .cta-form{
+    .cta-form {
         grid-template-columns: 1fr;
     }
-    .btn--form{
+
+    .btn--form {
         margin-top: 1.6rem;
     }
 }
