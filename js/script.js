@@ -1,26 +1,15 @@
-console.log("Hello world!");
-
-const myName = "Daniel Hanák";
-console.log(myName);
-
-const h1 = document.querySelector(".heading-primary");
-console.log(h1);
-
-// h1.addEventListener("click", function () {
-//     h1.textContent = myName;
-//     h1.style.backgroundColor = "red";
-//     h1.style.padding = "5rem";
-// });
-
+// dynamic year in copyright
 const copyrightYearEl = document.querySelector(".copyright-year");
 copyrightYearEl.textContent = new Date().getFullYear().toString();
 
+// mobile navigation
 const headerEl = document.querySelector(".header");
 const buttonMobileNavigationEl = document.querySelector(".btn-mobile-nav");
 buttonMobileNavigationEl.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
 })
 
+// smooth scrolling
 const allLinks = document.querySelectorAll("a:link");
 console.log(allLinks);
 allLinks.forEach(function (link) {
@@ -45,3 +34,25 @@ allLinks.forEach(function (link) {
         }
     })
 })
+
+// sticky navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(function (entries) {
+        const entry = entries[0];
+        const isHeroSectionVisible = entry.isIntersecting;
+
+        if (isHeroSectionVisible) {
+            document.body.classList.remove("sticky");
+        }
+
+        if (!isHeroSectionVisible) {
+            document.body.classList.add("sticky");
+        }
+    },
+    {
+        root: null,
+        threshold: 0,
+        rootMargin: "-80px"
+    });
+observer.observe(sectionHeroEl);
